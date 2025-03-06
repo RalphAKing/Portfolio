@@ -53,8 +53,14 @@
     .header p {
         font-size: 1.2rem;
         opacity: 0;
-        animation: fadeIn 1s ease-out forwards;
+        animation: fadeIn 2s ease-out forwards;
         animation-delay: 0.5s;
+    }
+    .header a {
+        font-size: 1.2rem;
+        opacity: 0;
+        animation: fadeIn 2s ease-out forwards;
+        animation-delay: 1s;
     }
 
     .profile-info {
@@ -308,6 +314,28 @@
         text-align: center;
         color: var(--secondary-color);
     }
+    .resume-button {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 1.8rem;
+        background: linear-gradient(135deg, #e74c3c, #c0392b);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .resume-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .resume-button i {
+        margin-right: 0.5rem;
+    }
+
     </style>
 </head>
 <body>
@@ -316,7 +344,11 @@
         <p>Full Stack Developer</p>
         <p>Leicestershire, UK | 16 years old</p>
         <p>ralphaking09@gmail.com | +44 7484 631926</p>
+        <a href="./static/projects/resume.pdf" download class="resume-button">
+            <i class="fas fa-download"></i> Download Resume
+        </a>
     </div>
+    
     
 
     <div class="profile-info">
