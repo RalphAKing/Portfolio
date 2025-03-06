@@ -110,20 +110,15 @@
         cursor: pointer;
         transition: all 0.3s ease;
         display: flex;
+        flex-wrap: wrap; 
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start; 
+        gap: 0.5rem; 
     }
 
     .skill-list li:hover {
         background-color: rgba(52, 152, 219, 0.1);
         padding-left: 1.2rem;
-    }
-
-    .project-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin: 1rem 0;
     }
 
     .tag {
@@ -132,6 +127,7 @@
         font-size: 0.9rem;
         background-color: #e0e0e0;
         transition: all 0.3s ease;
+        white-space: nowrap; 
     }
 
     .tag:hover {
@@ -139,6 +135,16 @@
         color: white;
         transform: scale(1.05);
     }
+
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+
 
     .projects-section {
         max-width: 1200px;
