@@ -63,17 +63,6 @@
         animation-delay: 1s;
     }
 
-    .profile-info {
-        max-width: 800px;
-        margin: 3rem auto;
-        padding: 2rem;
-        text-align: center;
-        font-size: 1.2rem;
-        background: white;
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
     .skills-section {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -336,6 +325,54 @@
         margin-right: 0.5rem;
     }
 
+    .experience-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    .experience-card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        border-left: 4px solid var(--secondary-color);
+    }
+
+    .experience-card h3 {
+        color: var(--secondary-color);
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .job, .achievement {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .job:last-child, .achievement:last-child {
+        border-bottom: none;
+    }
+
+    .job h4, .achievement h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .date {
+        color: var(--secondary-color);
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+
     </style>
 </head>
 <body>
@@ -348,12 +385,48 @@
             <i class="fas fa-download"></i> Download Resume
         </a>
     </div>
-    
-    
 
-    <div class="profile-info">
-        <p>Full-stack developer with expertise in modern web technologies, desktop applications, games, optimisation and cloud solutions.</p>
+    <div class="experience-section">
+        <div class="experience-card">
+            <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+            <div class="job">
+                <h4>Calver/Chef - Shires Inn</h4>
+                <p class="date">Current Position</p>
+                <p>Preparing and serving meals while maintaining high quality standards and food safety protocols.</p>
+            </div>
+            <div class="job">
+                <h4>Founder & CEO - RKing Industries</h4>
+                <p class="date">Current Position</p>
+                <p>Leading software development projects and managing client relationships.</p>
+            </div>
+            <div class="job">
+                <h4>Pot Washer - Shires Inn</h4>
+                <p>Previous Position</p>
+                <p>Maintained kitchen cleanliness and supported food service operations.</p>
+            </div>
+        </div>
+    
+        <div class="experience-card">
+            <h3><i class="fas fa-trophy"></i> Achievements</h3>
+            <div class="achievement">
+                <h4>Arkwright Engineering Scholarship</h4>
+                <p>Prestigious award recognizing exceptional engineering potential.</p>
+            </div>
+            <div class="achievement">
+                <h4>Rotary Technology Tournament Winner</h4>
+                <p>First place in a competitive technology challenge by demonstrating strong teamwork and collaboration skills.</p>
+            </div>
+            <div class="achievement">
+                <h4>Duke of Edinburgh Silver</h4>
+                <p>Completed challenging expedition and skill development program.</p>
+            </div>
+            <div class="achievement">
+                <h4>Duke of Edinburgh Bronze</h4>
+                <p>Successfully completed foundational level of the DofE award scheme.</p>
+            </div>
+        </div>
     </div>
+    
 
     <div class="skills-section">
         <div class="skill-card">
